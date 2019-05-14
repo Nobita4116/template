@@ -1,15 +1,9 @@
 import { Router } from 'express';
 import { initStaticAdmin, initStaticUpload } from '../middlewares/static';
-import { isCanPost } from '../middlewares/auth'
 
 import upload from './upload';
-import user from './user'
-import container from './container'
-import distributor from './distributor'
-import order from './order'
-import product from './product'
-import provider from './provider'
-import supermarket from './supermarket'
+import admin from './admin'
+import api from './api'
 
 let siteApp = new Router();
 
@@ -19,18 +13,8 @@ siteApp.use('/uploads', initStaticUpload())
 
 siteApp.use('/upload', upload)
 
-siteApp.use('/', user)
+siteApp.use('/admin', admin)
 
-siteApp.use('/container', container)
-
-siteApp.use('/distributor', distributor)
-
-siteApp.use('/order', order)
-
-siteApp.use('/product', product)
-
-siteApp.use('/provider', provider)
-
-siteApp.use('/supermarket', supermarket)
+siteApp.use('/api', api)
 
 export default siteApp;

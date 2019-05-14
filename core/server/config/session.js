@@ -1,7 +1,7 @@
 export default {
     localhost: {
         name: 'ssid',
-        secret: 'VEGETABLE-SYSTEM',
+        secret: 'TEMPLATE-SYSTEM',
         cookie: {
             domain: '',
             path: '/',

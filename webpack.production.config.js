@@ -12,8 +12,7 @@ let cleanOptions = {
 
 module.exports = {
    entry: {
-      'vegetable-build': path.join(__dirname, 'core/client/app/admin-dashboard/app.jsx'),
-      // 'vegetable-site': path.join(__dirname, 'core/client/app/site/index.js')
+      'template-build': path.join(__dirname, 'core/client/app/admin-dashboard/app.jsx')
    },
   output: {
     path: path.join(__dirname, 'public/build/js'),

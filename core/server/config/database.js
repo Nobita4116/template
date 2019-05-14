@@ -10,7 +10,7 @@ export default {
 			username: process.env.MYSQL_USERNAME || 'root',
 			// password: process.env.MYSQL_PASSWORD || 'jKLjoKSOmRMOTXtmfQz7',
 			password: process.env.MYSQL_PASSWORD || '',
-			database: process.env.MYSQL_DB || 'dev_vegetable',
+			database: process.env.MYSQL_DB || 'dev_template',
 			dialect: 'mysql',
 			logging: true,
 			pool: { max: 10, min: 0, idle: 1000}
