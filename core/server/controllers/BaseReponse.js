@@ -14,16 +14,6 @@ module.exports = {
             signal: 0,
             message: (message.message) ? message.message : message
         });
-    },
-
-    ResponseErr: (message = 'Something went wrong!') => {
-        return (req, res, next) => {
-            console.log('====', req)
-            res.send({
-                signal: 0,
-                message
-            });
-        }
     }
 }
     
